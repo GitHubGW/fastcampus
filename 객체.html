@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ironMan = {
+        name: "토니 스타크",
+        actor: "로버트 다우니 주니어",
+        alias: "아이언맨",
+      };
+
+      let { name } = ironMan;
+      console.log(name);
+
+      const captainAmerica = {
+        name: "스티븐 로저스",
+        actor: "크리스 에반스",
+        alias: "캡틴 아메리카",
+      };
+
+      console.log(ironMan);
+      console.log(captainAmerica);
+
+      function print({ alias, name, actor }) {
+        // let { alias, name, actor } = hero;
+        // let text = `${hero.alias}(${hero.name}) 역할을 맡은 배우는 ${hero.actor}입니다`;
+        let text2 = `${alias}(${name}) 역할을 맡은 배우는 ${actor}입니다`;
+        // console.log("text:", text);
+        console.log("text2:", text2);
+      }
+
+      print(ironMan);
+      //   print(captainAmerica);
+    </script>
+  </body>
+</html>
