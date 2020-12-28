@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let todos=[
+        {
+          id:1,
+          text:"자바스크립트 입문",
+          done:true
+        },
+        {
+          id:2,
+          text:"함수 배우기",
+          done:true
+        },
+        {
+          id:3,
+          text:"객체와 배열 배우기",
+          done:true
+        },
+        {
+          id:4,
+          text:"배열 내장함수 배우기",
+          done:false
+        }
+      ]
+
+    let user_todo=todos.filter(function(todo){
+      console.log(todo);
+      return todo.id>2;
+    } );
+
+    console.log(user_todo);
+
+  </script>
+  
+</body>
+</html>

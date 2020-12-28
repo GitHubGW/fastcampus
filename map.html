@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    let arr=[1,2,3,4,5,6,7,8];
+    // console.log(arr);
+
+    let arr2=arr.map(function(num){
+      return num*num;
+    });
+
+    // console.log(arr2); 
+
+    let items=[
+      {
+        id:1,
+        text:"hello",
+      },
+      {
+        id:2,
+        text:"bye",
+      }
+    ]
+    // console.log(items);
+    // console.log(items[0]);
+    // console.log(items[1]);
+
+    // let texts=items.map(function(item){
+    //   return item.text;
+    // });
+
+    // console.log(texts);
+
+    // let superheroes=["아이언맨","토르","캡틴아메리카","블랙팬서"];
+    // console.log(superheroes);
+    // console.log(superheroes.indexOf("토르"));
+    // console.log(superheroes.indexOf("블랙팬서"));
+
+      let todos=[
+        {
+          id:1,
+          text:"자바스크립트 입문",
+          done:true
+        },
+        {
+          id:2,
+          text:"함수 배우기",
+          done:true
+        },
+        {
+          id:3,
+          text:"객체와 배열 배우기",
+          done:true
+        },
+        {
+          id:4,
+          text:"배열 내장함수 배우기",
+          done:false
+        }
+      ]
+
+      // console.log(todos);
+      // console.log(todos.indexOf("배열 내장함수 배우기"));
+      // console.log(todos.findIndex(function(todo){
+      //   console.log(todo);
+      //   console.log(todo.id);
+      // }));
+      let user_todo=todos.find(function(todo){
+        return todo.id>2;
+      })
+
+      console.log(user_todo);
+
+  </script>
+  
+</body>
+</html>
