@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-  <script>
-    let todos=[
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user_arr = [
         {
-          id:1,
-          text:"자바스크립트 입문",
-          done:true
+          id: 1,
+          text: "한국",
+          done: true,
         },
         {
-          id:2,
-          text:"함수 배우기",
-          done:true
+          id: 2,
+          text: "미국",
+          done: false,
         },
         {
-          id:3,
-          text:"객체와 배열 배우기",
-          done:true
+          id: 3,
+          text: "중국",
+          done: true,
         },
-        {
-          id:4,
-          text:"배열 내장함수 배우기",
-          done:false
-        }
-      ]
+      ];
 
-    let user_todo=todos.filter(function(todo){
-      console.log(todo);
-      return todo.id>2;
-    } );
+      console.log(user_arr);
 
-    console.log(user_todo);
-
-  </script>
-  
-</body>
+      let user_arr_new = user_arr.filter((num, index, arr) => {
+        return num.id === 1;
+      });
+      console.log(user_arr_new);
+    </script>
+  </body>
 </html>
